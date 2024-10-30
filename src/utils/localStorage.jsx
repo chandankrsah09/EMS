@@ -1,6 +1,7 @@
 const employees = [
   {
     id: 1,
+    firstName: "Arjun",
     email: "employee1@example.com",
     password: "123",
     tasks: [
@@ -35,9 +36,11 @@ const employees = [
         category: "Documentation",
       },
     ],
+    taskCount: { active: 2, newTask: 1, completed: 1, failed: 0 },
   },
   {
     id: 2,
+    firstName: "Meera",
     email: "employee2@example.com",
     password: "123",
     tasks: [
@@ -67,15 +70,16 @@ const employees = [
         completed: true,
         failed: false,
         taskTitle: "Client meeting",
-        taskDescription:
-          "Attend meeting with the client to discuss project scope.",
+        taskDescription: "Attend meeting with the client to discuss project scope.",
         taskDate: "2024-10-10",
         category: "Meeting",
       },
     ],
+    taskCount: { active: 1, newTask: 2, completed: 1, failed: 0 },
   },
   {
     id: 3,
+    firstName: "Ravi",
     email: "employee3@example.com",
     password: "123",
     tasks: [
@@ -110,9 +114,11 @@ const employees = [
         category: "Development",
       },
     ],
+    taskCount: { active: 2, newTask: 2, completed: 1, failed: 0 },
   },
   {
     id: 4,
+    firstName: "Kavya",
     email: "employee4@example.com",
     password: "123",
     tasks: [
@@ -147,9 +153,11 @@ const employees = [
         category: "Testing",
       },
     ],
+    taskCount: { active: 2, newTask: 2, completed: 0, failed: 1 },
   },
   {
     id: 5,
+    firstName: "Rahul",
     email: "employee5@example.com",
     password: "123",
     tasks: [
@@ -169,8 +177,7 @@ const employees = [
         completed: true,
         failed: false,
         taskTitle: "Update Documentation",
-        taskDescription:
-          "Update the project documentation with the latest changes.",
+        taskDescription: "Update the project documentation with the latest changes.",
         taskDate: "2024-10-15",
         category: "Documentation",
       },
@@ -185,8 +192,10 @@ const employees = [
         category: "Development",
       },
     ],
+    taskCount: { active: 2, newTask: 1, completed: 1, failed: 0 },
   },
 ];
+
 
 const admin = [
   {
